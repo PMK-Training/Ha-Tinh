@@ -1,129 +1,137 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="PMK - Chi nhánh Hà Tĩnh, dịch vụ tư vấn du học và xuất khẩu lao động.">
-    <meta name="author" content="PMK">
-    <title>PMK Hà Tĩnh - Du học & Xuất khẩu lao động</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #2d87f0;
-            color: white;
-            text-align: center;
-            padding: 50px 0;
-        }
-        header h1 {
-            margin: 0;
-        }
-        section {
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-            background-color: white;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
-        }
-        .container {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-        .form-container {
-            flex: 1;
-            max-width: 500px;
-            margin-top: 20px;
-        }
-        .form-container h2 {
-            margin-bottom: 20px;
-        }
-        .form-container input, .form-container select, .form-container textarea, .form-container button {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .form-container button {
-            background-color: #2d87f0;
-            color: white;
-            cursor: pointer;
-        }
-        .form-container button:hover {
-            background-color: #1c5ab0;
-        }
-        .details-container {
-            flex: 2;
-            max-width: 700px;
-        }
-        footer {
-            background-color: #2d87f0;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PMK Hà Tĩnh - Tư vấn Du học & Xuất khẩu lao động</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; }
+    header { background-color: #1a73e8; color: white; padding: 20px; text-align: center; }
+    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    h2 { color: #1a73e8; }
+    .button { background-color: #fbbc04; padding: 10px 20px; color: black; border: none; border-radius: 5px; font-weight: bold; }
+    .program-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+    .program { border: 1px solid #ccc; padding: 20px; border-radius: 10px; background: #f9f9f9; }
+    footer { background-color: #f1f1f1; text-align: center; padding: 20px; font-size: 14px; }
+
+    /* Style for the form */
+    .form-container { display: none; padding: 20px; background-color: #f9f9f9; border-radius: 10px; margin-top: 30px; border: 1px solid #ccc; }
+    .form-container input, .form-container select, .form-container button { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; }
+    .form-container button { background-color: #1a73e8; color: white; cursor: pointer; }
+    .form-container button:hover { background-color: #0d57b0; }
+
+  </style>
 </head>
 <body>
 
-<header>
-    <h1>Chào mừng bạn đến với PMK Hà Tĩnh</h1>
-    <p>Dịch vụ tư vấn du học, xuất khẩu lao động và đào tạo nghề</p>
-</header>
+  <!-- Header Section -->
+  <header>
+    <h1>🎉 KHAI TRƯƠNG CHI NHÁNH PMK HÀ TĨNH 🎉</h1>
+    <p>Đồng hành cùng bạn trên hành trình ra thế giới!</p>
+  </header>
 
-<section>
-    <div class="container">
-        <div class="details-container">
-            <h2>Giới thiệu PMK Hà Tĩnh</h2>
-            <p>PMK Hà Tĩnh cung cấp dịch vụ tư vấn du học cho các quốc gia: Đức, Hàn Quốc, Nhật Bản, và các chương trình xuất khẩu lao động tại Nhật, Hàn Quốc, Đài Loan, Nga.</p>
-            <p>Hãy đăng ký ngay để nhận các chương trình ưu đãi đặc biệt nhân dịp khai trương chi nhánh Hà Tĩnh!</p>
-        </div>
+  <!-- About PMK Hà Tĩnh Section -->
+  <section>
+    <h2>📍 Về PMK Hà Tĩnh</h2>
+    <p>PMK Hà Tĩnh là chi nhánh chính thức của Công ty PMK – đơn vị chuyên tư vấn du học và xuất khẩu lao động uy tín trên toàn quốc. Với đội ngũ nhiều kinh nghiệm và dịch vụ trọn gói, chúng tôi cam kết đồng hành cùng bạn từ A-Z.</p>
+  </section>
 
-        <div class="form-container">
-            <h2>Đăng ký tư vấn miễn phí</h2>
-            <form action="https://your-form-handler-url.com" method="POST">
-                <label for="name">Họ và tên</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="phone">Số điện thoại</label>
-                <input type="text" id="phone" name="phone" required>
-
-                <label for="program">Chương trình quan tâm</label>
-                <select id="program" name="program" required>
-                    <option value="du_hoc_duc">Du học Đức</option>
-                    <option value="du_hoc_han">Du học Hàn Quốc</option>
-                    <option value="du_hoc_nhat">Du học Nhật Bản</option>
-                    <option value="xkld_nhat">Xuất khẩu lao động Nhật</option>
-                    <option value="xkld_han">Xuất khẩu lao động Hàn Quốc</option>
-                    <option value="xkld_dai">Xuất khẩu lao động Đài Loan</option>
-                    <option value="xkld_nga">Xuất khẩu lao động Nga</option>
-                </select>
-
-                <label for="message">Lời nhắn (tùy chọn)</label>
-                <textarea id="message" name="message" rows="4"></textarea>
-
-                <button type="submit">Đăng ký ngay</button>
-            </form>
-        </div>
+  <!-- Study Abroad Programs Section -->
+  <section>
+    <h2>🎓 Du học các nước</h2>
+    <div class="program-list">
+      <div class="program">
+        <h3>Du học Đức</h3>
+        <p>Miễn học phí, có lương khi học nghề, lộ trình định cư rõ ràng.</p>
+      </div>
+      <div class="program">
+        <h3>Du học Hàn Quốc</h3>
+        <p>Chi phí hợp lý, cơ hội việc làm thêm cao, học chuyển tiếp đại học dễ dàng.</p>
+      </div>
+      <div class="program">
+        <h3>Du học Nhật Bản</h3>
+        <p>Vừa học vừa làm, thu nhập ổn định, chi phí linh hoạt.</p>
+      </div>
     </div>
-</section>
+  </section>
 
-<footer>
-    <p>PMK Hà Tĩnh - Tư vấn du học, xuất khẩu lao động và đào tạo nghề. Liên hệ ngay để biết thêm chi tiết!</p>
-</footer>
+  <!-- Labor Export Programs Section -->
+  <section>
+    <h2>🔧 Xuất khẩu lao động</h2>
+    <div class="program-list">
+      <div class="program">
+        <h3>Nhật Bản</h3>
+        <p>Nhiều ngành nghề, thu nhập 28–40 triệu/tháng, hỗ trợ tay nghề.</p>
+      </div>
+      <div class="program">
+        <h3>Hàn Quốc</h3>
+        <p>Làm việc hợp pháp, lương cao, ổn định cuộc sống.</p>
+      </div>
+      <div class="program">
+        <h3>Đài Loan</h3>
+        <p>Chi phí thấp, dễ đi, phù hợp cho người chưa có tay nghề.</p>
+      </div>
+      <div class="program">
+        <h3>Nga</h3>
+        <p>Trải nghiệm 0 đồng ngành may mặc, được đào tạo miễn phí.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Offers Section -->
+  <section>
+    <h2>🎁 Ưu đãi khai trương</h2>
+    <ul>
+      <li>🎓 Học bổng từ 1 – 5 triệu đồng</li>
+      <li>🎁 Tặng khóa học tiếng online</li>
+      <li>💼 Miễn phí tư vấn 100%</li>
+      <li>🧧 Lì xì lên đến 200K cho hồ sơ sớm</li>
+    </ul>
+    <button class="button" onclick="showForm()">Đăng ký tư vấn ngay</button>
+  </section>
+
+  <!-- Form Section (hidden by default) -->
+  <div class="form-container" id="form-container">
+    <h3>Đăng ký tư vấn miễn phí</h3>
+    <form>
+      <label for="name">Họ và tên</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Số điện thoại</label>
+      <input type="text" id="phone" name="phone" required>
+
+      <label for="program">Chương trình quan tâm</label>
+      <select id="program" name="program" required>
+        <option value="du_hoc_duc">Du học Đức</option>
+        <option value="du_hoc_han">Du học Hàn Quốc</option>
+        <option value="du_hoc_nhat">Du học Nhật Bản</option>
+        <option value="xkld_nhat">Xuất khẩu lao động Nhật</option>
+        <option value="xkld_han">Xuất khẩu lao động Hàn Quốc</option>
+        <option value="xkld_dai">Xuất khẩu lao động Đài Loan</option>
+        <option value="xkld_nga">Xuất khẩu lao động Nga</option>
+      </select>
+
+      <label for="message">Lời nhắn (tùy chọn)</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button type="submit">Đăng ký ngay</button>
+    </form>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    Địa chỉ: [Thêm địa chỉ cụ thể chi nhánh Hà Tĩnh] | Hotline: 09xx.xxx.xxx | Fanpage: PMK Hà Tĩnh
+  </footer>
+
+  <!-- JavaScript to show form -->
+  <script>
+    function showForm() {
+      document.getElementById("form-container").style.display = "block"; // Show the form when button is clicked
+    }
+  </script>
 
 </body>
 </html>
